@@ -46,12 +46,12 @@ OK
   Must return status 201 - Created.
   3. **test_2_get_by_id**: Get request for id -9999.
   Request response data must not be empty.
-  4. **test_3_post_new_market_bad_request**: Bad Post for a new market, using id -9999.
+  4. **test_3_post_new_market_bad_request**: Bad Post for a new market, using id -9998.
   Must return status 400 - Bad Request.
   5. **test_4_search_by_name_equals**: Search markets for with name "VILA MEDEIROS".
   There must be at least one result and its *nome_feira* must be == "VILA MEDEIROS"
   6. **test_5_search_by_district_like**: Search markets by district, looking for matches *like* "%MADALENA%"
-  There must be at least one result and its *district* must have == "MADALENA"
+  There must be at least one result and its *district* must have "MADALENA" somewhere in the text.
   7. **test_6_update**: Update market "*bairro*" field.
   Must return status 200 - Ok.
   8. **test_7_bad_update**: Tries to update market id and fails.
@@ -73,7 +73,7 @@ For the setup script and API to run, the following software must be present.
 #### Setup and how to run
   - Run setup.sh: installs the environment.
   - Run app.sh: Activates the environment and run the app.py.
-That's it! The API will be running on the port 5000 of the localhost.
+That's it! The API will be running on the port 5000 of the localhost. ex.: localhost:5000/api/feira
 
 #### Database Import
 The database was imported using *importer.py*.
