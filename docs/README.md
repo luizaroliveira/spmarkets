@@ -1,4 +1,3 @@
-'FORMAT: 1A
 HOST: http://localhost/
 
 # spmarkets
