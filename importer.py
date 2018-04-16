@@ -10,7 +10,7 @@ with app.app_context():
     db.create_all()
 
     # Opening the csv file
-    with open('data/DEINFO_AB_FEIRASLIVRES_2014.csv') as csvfile:
+git comm    with open('data/DEINFO_AB_FEIRASLIVRES_2014.csv') as csvfile:
         csv_reader = csv.reader(csvfile, delimiter=',')
 
         # Skipping the headers
