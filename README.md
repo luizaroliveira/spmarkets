@@ -2,7 +2,7 @@
 
 SP Markets is a python restful API made to get, post, update and search São Paulo open markets in an SQL database and can serve as barebone structure base to any restful API alike.
 
-The project run un a virtual envorinment and has a setup script to install its necessary packages.
+The project runs un a virtual envorinment and has a setup script to install its necessary packages.
 The API documentation, thechnologies used and setup instrucions are listed below.
 
 #### Documentation
